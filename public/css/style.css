@@ -1,8 +1,27 @@
-#card{
-    text-align: center;
+.navbar .navbar-brand img {
+    max-width: 100px;
 }
- 
-    
 
-    
- 
+.navbar-collapse .navbar-nav .nav-link {
+    color: #0e61b9;
+    letter-spacing: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+}
+
+.navbar-collapse .nav-link:hover,
+
+.navbar-collapse .nav-link.active {
+    color: rgb(6, 3, 65);
+}
+
+.navbar-collapse.show {
+    transition: all 0.5s;
+}
